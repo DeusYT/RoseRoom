@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="catalog-page">
+        <!--Popup start -->
+    <div class="modal" id="modal_home-page">
+        <div class="popup">
+            <button class="popup__close close" id="popup_close_home-page">Закрыть</button>
+            <div class="popup__data">
+                <h3 class="popup__title">Введите номер телефона</h3>
+                <form action="" class="popup__form">
+                    <input class="popup__input popup__input_phone" type="tel" placeholder="+7 (000) 000-00-00">
+                    <button class="popup__button" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="popup__succes">
+                <p class="popup__text">Спасибо!</p>
+                <p class="popup__text">Наш менеджер свяжется с вами в ближайшее время</p>
+            </div>
+        </div>
+    </div>
+    <!--Popup end -->
+
+    <!-- Header start -->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__navbar navbar">
+                <button class="navbar__hamburger" id="menu_open">
+                    <p class="navbar__line"></p>
+                </button>
+                <!--Menu start-->
+                <div class="navbar__menu menu" id="menu">
+                    <button class="menu__close close" id="menu_close">Закрыть</button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="dresses.html" class="menu__link">Платья</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Брюки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Юбки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Блузки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Нижнее белье</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Menu end-->
+            </div>
+            <div class="header__logo logo">
+                <img class="logo__image" src="./assets/img/logo.png" alt="Логотип">
+                <a class="logo__phone" href="tel:5(63)593-93-80">5(63)593-93-80</a>
+                <button class="logo__button" id="popup_open_home-page">Заказать обратный звонок</button>
+            </div>
+            <a class="header__cart cart" href="catalog.html">
+                <img class="cart__img" src="./assets/img/bag.png" alt="Ссылка на корзину">
+            </a>
+        </div>
+    </header>
+    <!-- Header finish -->
+    <main class="main">
+        <ul class="breadcrumb">
+            <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="index.html">Rose Room</a>
+            </li>
+            <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="breadcrumb__item">
+                Платья
+            </li>
+        </ul>
+        <section class="products">
+            <ul class="products__list">
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-1.jpg" alt="платье 1">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-2.jpg" alt="платье 2">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-3.jpg" alt="платье 3">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-4.jpg" alt="платье 4">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-5.jpg" alt="платье 5">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-6.jpg" alt="платье 6">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-7.jpg" alt="платье 7">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-8.jpg" alt="платье 8">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-9.jpg" alt="платье 9">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-10.jpg" alt="платье 10">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-11.jpg" alt="платье 11">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-12.jpg" alt="платье 12">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-13.jpg" alt="платье 13">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-14.jpg" alt="платье 14">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-15.jpg" alt="платье 15">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+                <li class="products__item product">
+                    <div class="product__wrapper">
+                        <img class="product__img" src="/assets/img/products/product-16.jpg" alt="платье 16">
+                    </div>
+                    <h3 class="product__title">Платье мини</h3>
+                    <b class="product__price">1500 ₽</b>
+                </li>
+            </ul>
+        </section>
+        <ul class="pagination">
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">1</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">2</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">3</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">...</a>
+            </li>
+            <li class="pagination__item">
+                <a href="#" class="pagination__link">10</a>
+            </li>
+        </ul>
+    </main>
+    <!-- Footer start -->
+    <footer class="footer">
+        <p class="footer__copyright">©Rose Room, 2020</p>
+    </footer>
+    <!-- Footer finish -->
+    </div>
+    <script src="./assets/js/scripts/header.js"></script>
+</body>
+</html>

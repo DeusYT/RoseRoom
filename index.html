@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!--Popup start -->
+    <div class="modal" id="modal_home-page">
+        <div class="popup">
+            <button class="popup__close close" id="popup_close_home-page">Закрыть</button>
+            <div class="popup__data">
+                <h3 class="popup__title">Введите номер телефона</h3>
+                <form action="" class="popup__form">
+                    <input class="popup__input popup__input_phone" type="tel" placeholder="+7 (000) 000-00-00">
+                    <button class="popup__button" type="submit">Отправить</button>
+                </form>
+            </div>
+            <div class="popup__succes">
+                <p class="popup__text">Спасибо!</p>
+                <p class="popup__text">Наш менеджер свяжется с вами в ближайшее время</p>
+            </div>
+        </div>
+    </div>
+    <!--Popup end -->
+
+    <!-- Header start -->
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__navbar navbar">
+                <button class="navbar__hamburger" id="menu_open">
+                    <p class="navbar__line"></p>
+                </button>
+                <!--Menu start-->
+                <div class="navbar__menu menu" id="menu">
+                    <button class="menu__close close" id="menu_close">Закрыть</button>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="dresses.html" class="menu__link">Платья</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Брюки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Юбки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Блузки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Нижнее белье</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Menu end-->
+            </div>
+            <div class="header__logo logo">
+                <img class="logo__image" src="./assets/img/logo.png" alt="Логотип">
+                <a class="logo__phone" href="tel:5(63)593-93-80">5(63)593-93-80</a>
+                <button class="logo__button" id="popup_open_home-page">Заказать обратный звонок</button>
+            </div>
+            <a class="header__cart cart" href="catalog.html">
+                <img class="cart__img" src="./assets/img/bag.png" alt="Ссылка на корзину">
+            </a>
+        </div>
+    </header>
+    <!-- Header finish -->
+    <main class="main">
+        <!-- Slider start -->
+        <section class="slider" id="slider">
+                <ul class="slider__list">
+                    <li class="slider__slide">
+                        <img class="slider__img" src="./assets/img/slide_1.jpg" alt="Слайд 1">
+                        <p class="slider__text">Новое поступление</p>
+                    </li>
+                    <li class="slider__slide">
+                        <img class="slider__img" src="./assets/img/slide_1.jpg" alt="Слайд 2">
+                        <p class="slider__text">Текст слайда 2</p>
+                    </li>
+                    <li class="slider__slide">
+                        <img class="slider__img" src="./assets/img/slide_1.jpg" alt="Слайд 3">
+                        <p class="slider__text">Текст слайда 3</p>
+                    </li>
+                    <li class="slider__slide">
+                        <img class="slider__img" src="./assets/img/slide_1.jpg" alt="Слайд 4">
+                        <p class="slider__text">Текст слайда 4</p>
+                    </li>
+                </ul>
+            <div class="slider__dots dots">
+                <button class="dots__dot dots__dot_active"></button>
+                <button class="dots__dot"></button>
+                <button class="dots__dot"></button>
+                <button class="dots__dot"></button>         
+            </div>
+            <button class="slider__arrow slider__arrow_left" id="slide_prev">Назад</button>
+            <button class="slider__arrow slider__arrow_right" id="slide_next">Далее</button>
+        </section>
+        <!-- Slider finish -->
+
+        <!-- Catalog start -->
+        <section class="catalog">
+            <h2 class="catalog__title">Каталог</h2>
+            <ul class="catalog__categories categories">
+                <li class="categories__category">
+                    <img class="categories__img" src="./assets/img/catalog/skirt.jpg" alt="Юбки">
+                    <h3 class="categories__title">Юбки</h3>
+                </li>
+                <li class="categories__category">
+                    <img class="categories__img" src="./assets/img/catalog/blouse.jpg" alt="Блузки">
+                    <h3 class="categories__title">Блузки</h3>
+                </li>
+                <li class="categories__category">
+                    <img class="categories__img" src="./assets/img/catalog/dresses.jpg" alt="Платья">
+                    <h3 class="categories__title">Платья</h3>
+                </li>
+                <li class="categories__category">
+                    <img class="categories__img" src="./assets/img/catalog/pants.jpg" alt="Брюки">
+                    <h3 class="categories__title">Брюки</h3>
+                </li>
+                <li class="categories__category">
+                    <img  class="categories__img" src="./assets/img/catalog/underwear.jpg" alt="Нижнее белье">
+                    <h3 class="categories__title">Нижнее белье</h3>
+                </li>
+            </ul>
+        </section>
+        <!-- Catalog finish -->
+
+        <!-- Reviews start -->
+        <section class="reviews">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__wrapper">
+                <div class="reviews__window" id="window">
+                    <ul class="reviews__list" id="line">
+                        <li class="reviews__review">
+                            <img class="reviews__img" src="./assets/img/review/review_1.jpg" alt="Отзыв 1">
+                        </li>
+                        <li class="reviews__review">
+                            <img class="reviews__img" src="./assets/img/review/review_2.jpg" alt="Отзыв 2">
+                        </li>
+                        <li class="reviews__review">
+                            <img class="reviews__img" src="./assets/img/review/review_3.jpg" alt="Отзыв 3">
+                        </li>
+                        <li class="reviews__review">
+                            <img class="reviews__img" src="./assets/img/review/review_4.jpg" alt="Отзыв 4">
+                        </li>
+                        <li class="reviews__review">
+                            <img class="reviews__img" src="./assets/img/review/review_4.jpg" alt="Отзыв 5">
+                        </li>
+                    </ul>
+                </div>
+                <button class="reviews__arrow reviews__arrow_left" id="review-slide_prev">Назад</button>
+                <button class="reviews__arrow reviews__arrow_right" id="review-slide_next">Далее</button>
+            </div>
+        </section>
+        <!-- Reviews finish -->
+
+        <!-- Contact start -->
+        <section class="contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__contact">
+                <div class="contacts__wrapper">
+                    <ul class="contacts__social social">
+                        <li class="social__icon">
+                            <a class="social__link social__link_viber" href="#">viber</a>
+                        </li>
+                        <li class="social__icon">
+                            <a class="social__link social__link_vk" href="#">vk</a>
+                        </li>
+                        <li class="social__icon">
+                            <a class="social__link social__link_instagram" href="#">instagram</a>
+                        </li>
+                        <li class="social__icon">
+                            <a class="social__link social__link_whatsup" href="#">whatsup</a>
+                        </li>
+                    </ul>
+                    <a class="contacts__mail" href="mailto:RoseRoom@mail.ru">RoseRoom@mail.ru</a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact finish -->
+    </main>
+    <!-- Footer start -->
+    <footer class="footer">
+        <p class="footer__copyright">©Rose Room, 2020</p>
+    </footer>
+    <!-- Footer finish -->
+    <script src="assets/js/scripts/header.js"></script>
+    <script src="./assets/js/scripts/sliders.js"></script>
+</body>
+</html>
