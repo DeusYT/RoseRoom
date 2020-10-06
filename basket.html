@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="basket-page">
+ <!--Popup start -->
+ <div class="modal" id="modal_home-page">
+    <div class="popup">
+        <button class="popup__close close" id="popup_close_home-page">Закрыть</button>
+        <div class="popup__data">
+            <h3 class="popup__title">Введите номер телефона</h3>
+            <form action="" class="popup__form">
+                <input class="popup__input popup__input_phone" type="tel" placeholder="+7 (000) 000-00-00">
+                <button class="button popup__button" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="popup__succes">
+            <p class="popup__text">Спасибо!</p>
+            <p class="popup__text">Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+    </div>
+</div>
+<!--Popup end -->
+
+<!-- Header start -->
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__navbar navbar">
+            <button class="navbar__hamburger" id="menu_open">
+                <p class="navbar__line"></p>
+            </button>
+            <!--Menu start-->
+            <div class="navbar__menu menu" id="menu">
+                <button class="menu__close close" id="menu_close">Закрыть</button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="dresses.html" class="menu__link">Платья</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Брюки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Юбки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Блузки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Нижнее белье</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Menu end-->
+        </div>
+        <div class="header__logo logo">
+            <img class="logo__image" src="./assets/img/logo.png" alt="Логотип">
+            <a class="logo__phone" href="tel:5(63)593-93-80">5(63)593-93-80</a>
+            <button class="button logo__button" id="popup_open_home-page">Заказать обратный звонок</button>
+        </div>
+        <a class="cart header__cart" href="catalog.html">
+            <img class="cart__img" src="./assets/img/bag.png" alt="Ссылка на корзину">
+            <p class="cart__count">3</p>
+        </a>
+    </div>
+</header>
+<!-- Header finish -->
+<main class="main">
+    <ul class="breadcrumb">
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="index.html">Rose Room</a>
+        </li>
+        <li class="breadcrumb__item">
+            Корзина
+        </li>
+    </ul>
+    <section class="basket">
+        <ul class="basket__list">
+            <li class="basket__item">
+                <div class="close basket__close">Закрыть</div>
+                <div class="basket__left-item">
+                    <img class="basket__img" src="./assets/img/products/product-1.jpg" alt="Платье 1">
+                </div>
+                <div class="basket__right-item">
+                    <h3 class="basket__title">Платье мини tie dye</h3>
+                    <span class="basket__price">1500 ₽</span>
+                    <div class="basket__size">M</div>
+                </div>
+            </li>
+            <li class="basket__item">
+                <div class="close basket__close">Закрыть</div>
+                <div class="basket__left-item">
+                    <img class="basket__img" src="./assets/img/products/product-7.jpg" alt="Платье 2">
+                </div>
+                <div class="basket__right-item">
+                    <h3 class="basket__title">Платье мини</h3>
+                    <span class="basket__price">1500 ₽</span>
+                    <div class="basket__size">M</div>
+                </div>
+            </li>
+            <li class="basket__item">
+                <div class="close basket__close">Закрыть</div>
+                <div class="basket__left-item">
+                    <img class="basket__img" src="./assets/img/products/product-5.jpg" alt="Платье 2">
+                </div>
+                <div class="basket__right-item">
+                    <h3 class="basket__title">Платье мини</h3>
+                    <span class="basket__price">1500 ₽</span>
+                    <div class="basket__size">M</div>
+                </div>
+            </li>
+        </ul>
+        <button class="button basket__button">Отправить</button>
+    </section>
+</main>
+<!-- Footer start -->
+<footer class="footer">
+    <p class="footer__copyright">©Rose Room, 2020</p>
+</footer>
+<!-- Footer finish -->
+    </div>
+    <script src="./assets/js/scripts/header.js"></script>
+</body>
+</html>

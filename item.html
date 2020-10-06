@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="item-page">
+ <!--Popup start -->
+ <div class="modal" id="modal_home-page">
+    <div class="popup">
+        <button class="popup__close close" id="popup_close_home-page">Закрыть</button>
+        <div class="popup__data">
+            <h3 class="popup__title">Введите номер телефона</h3>
+            <form action="" class="popup__form">
+                <input class="popup__input popup__input_phone" type="tel" placeholder="+7 (000) 000-00-00">
+                <button class="button popup__button" type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="popup__succes">
+            <p class="popup__text">Спасибо!</p>
+            <p class="popup__text">Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+    </div>
+</div>
+<!--Popup end -->
+
+<!-- Header start -->
+<header class="header">
+    <div class="header__wrapper">
+        <div class="header__navbar navbar">
+            <button class="navbar__hamburger" id="menu_open">
+                <p class="navbar__line"></p>
+            </button>
+            <!--Menu start-->
+            <div class="navbar__menu menu" id="menu">
+                <button class="menu__close close" id="menu_close">Закрыть</button>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="dresses.html" class="menu__link">Платья</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Брюки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Юбки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Блузки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Нижнее белье</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Menu end-->
+        </div>
+        <div class="header__logo logo">
+            <img class="logo__image" src="./assets/img/logo.png" alt="Логотип">
+            <a class="logo__phone" href="tel:5(63)593-93-80">5(63)593-93-80</a>
+            <button class="button logo__button" id="popup_open_home-page">Заказать обратный звонок</button>
+        </div>
+        <a class="header__cart cart" href="catalog.html">
+            <img class="cart__img" src="./assets/img/bag.png" alt="Ссылка на корзину">
+        </a>
+    </div>
+</header>
+<!-- Header finish -->
+<main class="main">
+    <ul class="breadcrumb">
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="index.html">Rose Room</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="catalog.html">Платья</a>
+        </li>
+        <li class="breadcrumb__item">
+            Платье мини
+        </li>
+    </ul>
+    <section class="item">
+        <div class="item__left">
+            <div class="item__gallery gallery">
+                <div class="gallery__central">
+                    <img src="./assets/img/products/product-1.jpg" alt="Главное изображения" class="gallery__img">
+                </div>
+                <div class="gallery__wrapper">
+                    <img src="./assets/img/products/product-1.jpg" alt="Главное изображения" class="gallery__img gallery__img_small">
+                    <img src="./assets/img/products/product-1_2.jpg" alt="Главное изображения" class="gallery__img gallery__img_small">
+                    <img src="./assets/img/products/product-1_3.jpg" alt="Главное изображения" class="gallery__img gallery__img_small">
+                </div>
+            </div>
+        </div>
+        <div class="item__right">
+            <h2 class="item__title">Платье мини tie dye</h2>
+            <span class="item__price">1500 ₽</span>
+            <div class="table-size item__table-size">
+                <input class="table-size__input" type="radio" id="size-s" name="table-size" value="size-s">
+                <label class="table-size__label" for="size-s">S</label>
+                <input class="table-size__input" type="radio" id="size-m" name="table-size" value="size-m">
+                <label class="table-size__label" for="size-m">M</label>
+                <input class="table-size__input" type="radio" id="size-l" name="table-size" value="size-l">
+                <label class="table-size__label" for="size-l">L</label>
+                <input class="table-size__input" type="radio" id="size-xl" name="table-size" value="size-xl">
+                <label class="table-size__label" for="size-xl">XL</label>
+            </div>
+            <table class="item__table-info table-info">
+                <caption class="table-info__title">Описание товара</caption>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Материал: </th>
+                    <td class="table-info__td">хлопок</td>
+                </tr>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Длина: </th>
+                    <td class="table-info__td">мини</td>
+                </tr>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Вырез: </th>
+                    <td class="table-info__td">квадратный</td>
+                </tr>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Рукова: </th>
+                    <td class="table-info__td">без рукавов</td>
+                </tr>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Сезон: </th>
+                    <td class="table-info__td">лето</td>
+                </tr>
+                <tr class="table-info__tr">
+                    <th class="table-info__th">Декаративные элементы:</th>
+                    <td class="table-info__td">кулиска</td>
+                </tr>
+            </table>
+            <button class="button item__button">Добавить в корзину</button>
+        </div>
+    </section>
+</main>
+<!-- Footer start -->
+<footer class="footer">
+    <p class="footer__copyright">©Rose Room, 2020</p>
+</footer>
+<!-- Footer finish -->
+    </div>
+    <script src="./assets/js/scripts/header.js"></script>
+</body>
+</html>

@@ -28,7 +28,7 @@ menuClose.addEventListener('click', function() {
 });
 
 openPopupHomePage.addEventListener('click', function() {
-    openModal(modalHomePage, 'popup_open')
+    openModal(modalHomePage, 'popup_open');
 });
 
 modalCloseHomePage.addEventListener('click', function() {
