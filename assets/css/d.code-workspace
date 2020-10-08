@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\products"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "RoseRoom"
+	}
+}

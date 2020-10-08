@@ -29,6 +29,45 @@
 </div>
 <!--Popup end -->
 
+ <!--Popup start -->
+ <div class="modal modal_basket" id="modal_basket-page">
+    <div class="popup popup_basket">
+        <button class="popup__close close" id="popup_close_basket-page">Закрыть</button>
+        <div class="popup__data">
+            <h3 class="popup__title">Оформление заказа</h3>
+            <form action="" class="popup__form">
+                <div class="popup__input-wrapper">
+                    <label for="popup-phone" class="popup__label">Телефон:</label>
+                    <input class="popup__input popup__input_phone" type="tel" id="popup-phone">
+                </div>
+                <div class="popup__input-wrapper">
+                    <label for="popup-email" class="popup__label">E-mail:</label>
+                    <input class="popup__input popup__input_mail" type="mail" id="popup-email">
+                </div>
+                <div class="popup__input-wrapper">
+                    <label for="popup-city" class="popup__label">Город:</label>
+                    <input class="popup__input popup__input_city" type="text" id="popup-city">
+                </div>
+                <div class="popup__input-wrapper">
+                    <label for="popup-address" class="popup__label">Адрес:</label>
+                    <input class="popup__input popup__input_address" type="text" id="popup-address" placeholder="Улица">
+                    <input class="popup__input popup__input_address-mini" type="text" placeholder="Дом">
+                    <input class="popup__input popup__input_address-mini" type="text" placeholder="Кв">
+                </div>
+                <div class="popup__input-wrapper">
+                    <input type="checkbox" class="popup__input popup__input_checkbox" id="popup-checkbox">
+                    <label for="popup-checkbox" class="popup__label popup__label_checkbox">согласие на обработку персональных данных</label>
+                </div>
+            </form>
+        </div>
+        <div class="popup__succes">
+            <p class="popup__text">Спасибо!</p>
+            <p class="popup__text">Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+    </div>
+</div>
+<!--Popup end -->
+
 <!-- Header start -->
 <header class="header">
     <div class="header__wrapper">
@@ -122,7 +161,7 @@
                 </div>
             </li>
         </ul>
-        <button class="button basket__button">Отправить</button>
+        <button class="button basket__button" id="popup_open_basket-page">Отправить</button>
     </section>
 </main>
 <!-- Footer start -->
