@@ -6,9 +6,7 @@ const menuClose = document.querySelector('#menu_close');
 const modalHomePage = document.querySelector('#modal_home-page');
 const modalCloseHomePage = document.querySelector('#popup_close_home-page');
 const openPopupHomePage = document.querySelector('#popup_open_home-page');
-const openPopupBasketPage = document.querySelector('#popup_open_basket-page');
-const popupBasketPage = document.querySelector('#modal_basket-page');
-const closePopupBasketPage = document.querySelector('#popup_close_basket-page');
+
 
 function openModal(el, className) {
     if(!el.classList.contains(className)) {
@@ -49,8 +47,3 @@ closePopupBasketPage.addEventListener('click', function() {
 });
 
 /*menu close*/
-
-
-document.addEventListener('scroll', function(e) {
-    e.preventDefault();
-});

@@ -745,9 +745,11 @@ body {
 /* Bradcrumb start */
 
 .breadcrumb {
+    position: relative;
     margin-bottom: 30px;
     padding-left: 8px;
     list-style: none;
+    z-index: 22;
 }
 
 .contact-page .breadcrumb {
@@ -803,6 +805,11 @@ body {
     margin-bottom: 95px;
     margin-right: 104px;
     cursor: pointer;
+}
+
+.products__link {
+    text-decoration: none;
+    color: #000;
 }
 
 .products__item:hover .product__wrapper {
