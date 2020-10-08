@@ -12,6 +12,7 @@ const closePopupBasketPage = document.querySelector('#popup_close_basket-page');
 
 function openModal(el, className) {
     if(!el.classList.contains(className)) {
+        document.body.classList.add('scroll-hidden');
         el.classList.add(className);
     }
 }
@@ -19,6 +20,7 @@ function openModal(el, className) {
 function closeModal(el, className) {
     if(el.classList.contains(className)) {
         el.classList.remove(className);
+        document.body.classList.remove('scroll-hidden');
     }
 }
 
@@ -49,3 +51,6 @@ closePopupBasketPage.addEventListener('click', function() {
 /*menu close*/
 
 
+document.addEventListener('scroll', function(e) {
+    e.preventDefault();
+});

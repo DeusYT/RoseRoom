@@ -1,6 +1,11 @@
 body {
+    
     font-family: 'Comfortaa';
     font-weight: 300;
+}
+
+.scroll-hidden {
+    overflow: hidden;
 }
 
 .main {
@@ -356,10 +361,12 @@ body {
 
 .popup_basket .popup__input-wrapper {
     display: flex;
+    align-items: baseline;
 }
 
 .popup_basket .popup__input {
     display: inline-block;
+    vertical-align: middle;
     width: 100%;
     height: 36px;
     box-sizing: border-box;
@@ -383,6 +390,7 @@ body {
 .popup_basket .popup__label {
     flex-grow: 1;
     min-width: 140px;
+    height: 30px;
     font-size: 24px;
 }
 
@@ -424,10 +432,9 @@ body {
     background: url('../img/checked.svg') no-repeat center;
 }
 
-
 .popup_basket .popup__close {
-    top: 50px;
-    right: 10px;
+    top: 30px;
+    right: 0px;
 }
 
 @keyframes shake {
@@ -1477,7 +1484,48 @@ body {
         height: auto;
     }
 
-    /**transport end*/
+    /*transport end*/
+
+    /*popup start */
+
+    .popup_basket .popup__form {
+        max-width: 350px;
+    }
+
+    .popup_basket .popup__label {
+        min-width: 80px;
+        font-size: 16px;
+    }
+
+    .popup_basket .popup__input {
+        flex-grow: 2;
+    }
+
+    .popup_basket .popup__title {
+        font-size: 18px;
+    }
+
+    .popup_basket .popup__data {
+        padding: 0;
+    }
+
+    .popup_basket .popup__close {
+        top: 0;
+    }
+    
+    .popup_basket .popup__label_checkbox {
+        font-size: 14px;
+    }
+
+    .popup_basket .popup__label_checkbox:before {
+        width: 25px;
+        height: 25px;
+        top: -5px;
+        left: 15px;
+        background-size: cover;
+    }
+
+    /*popup end*/
 }
 
 @media screen and (max-width: 650px) {
@@ -1703,6 +1751,37 @@ body {
     }
 
     /*basket end*/
+
+    /*popup start*/
+
+    .popup_basket .popup__form {
+        width: 280px;
+    }
+
+    .popup_basket .popup__data {
+        margin: 10px 0;
+    }
+
+    .popup_basket .popup__title {
+        font-size: 16px;
+    }
+
+    .popup_basket .popup__label {
+        min-width: 60px;
+        font-size: 12px;
+    }
+
+    .popup_basket .popup__input {
+        margin-bottom: 20px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .popup_basket .popup__label_checkbox:before {
+        left: -5px;
+    }
+    
+    /*popup end*/
 }
 
 @media screen and (max-width: 375px) {
@@ -2122,9 +2201,9 @@ body {
     .transport__title {
         font-size: 12px;
     }
-
-
     /*transport end*/
+
+
     
     /*footer start*/
     .footer__copyright {
